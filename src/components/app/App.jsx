@@ -11,10 +11,7 @@ export default class App extends Component {
         <div className="main">
           <Router>
             <Switch>
-              <Route
-                path="/"
-                exact
-                render={(routerProps) => <NewsSearch {...routerProps} />}
+              <Route path="/" component={NewsSearch}
               />
             </Switch>
           </Router>
