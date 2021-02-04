@@ -6,8 +6,7 @@ export default class Search extends Component {
     const { handleSearch } = this.props;
     return (
       <form style={{ 
-        textAlign: 'center',
-        fontFamily: 'fantasy'
+        textAlign: 'center'
         }}>
         <input onChange={handleSearch} placeholder='Search..'/>
       </form>

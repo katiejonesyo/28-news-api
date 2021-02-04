@@ -8,11 +8,16 @@ const Article = ({ url, title, author, description })  => {
             frontSize:'8.5rem', 
             color: 'white',
             background: 'black',
+            textAlign: 'center',
+            fontFamily: 'fantasy',
+            paddingLeft: '30px',
+            paddingRight: '30px',
             }}>
             {title}
             </a>
             {author && <p> Author: {author} </p>}
             <p>Description: {description}</p>
+            
         </>
     ) 
 };

@@ -10,9 +10,10 @@ const Header = ({ handleSearch }) => {
         border: '3px solid black',
         color: 'white',
         background: 'black',
+        fontFamily: 'fantasy',
       }}
     >
-      <h1 style={{ textAlign: 'center' }}>Search</h1>
+      <h1 style={{ textAlign: 'center' }}>Search Articles</h1>
       <Search handleSearch={handleSearch} />
     </header>
 
