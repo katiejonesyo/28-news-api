@@ -5,10 +5,8 @@ export default class Search extends Component {
   render() {
     const { handleSearch } = this.props;
     return (
-      <form style={{ 
-        textAlign: 'center'
-        }}>
-        <input onChange={handleSearch} placeholder='Search..'/>
+      <form style={{ textAlign: "center" }}>
+        <input onChange={handleSearch} placeholder="Search articles" />
       </form>
     );
   }
@@ -17,6 +15,4 @@ export default class Search extends Component {
 Search.propTypes = {
   handleSearch: PropTypes.func.isRequired,
 };
-
-
 

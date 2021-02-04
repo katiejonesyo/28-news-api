@@ -1,5 +1,5 @@
 import React from 'react';
-import Search from '../search/Search';
+import Search from  '../search/Search';
 import PropTypes from 'prop-types';
 
 const Header = ({ handleSearch }) => {
@@ -16,7 +16,6 @@ const Header = ({ handleSearch }) => {
       <h1 style={{ textAlign: 'center' }}>Search Articles</h1>
       <Search handleSearch={handleSearch} />
     </header>
-
   );
 };
 

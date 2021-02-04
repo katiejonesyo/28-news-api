@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ArticlesList from '../components/articles/ArticlesList';
 import getArticles from '../services/getArticles';
 import Header from '../components/header/Header';
+import Search from '../components/search/Search';
 
 export default class NewsSearch extends Component {
   state = {
@@ -9,6 +10,12 @@ export default class NewsSearch extends Component {
     articles: [],
     search: "",
   };
+
+  componentDidMount() {
+    getArticles().then(({ articles }) =>
+      this.setState({ articles, loading: false })
+    );
+  }
 
   handleSearch = ({ target }) => {
     if (target.value.trim()) {
@@ -18,12 +25,6 @@ export default class NewsSearch extends Component {
       this.setState({ search: target.value.trim() });
     }
   };
-
-  componentDidMount() {
-    return getArticles().then(({ articles }) =>
-      this.setState({ articles, loading: false })
-    );
-  }
 
   render() {
     const { articles, loading, search } = this.state;
