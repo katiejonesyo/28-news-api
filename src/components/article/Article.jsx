@@ -8,17 +8,16 @@ const Article = ({ url, title, author, description })  => {
             {title}
             </a>
             {author && <p> Written By: {author} </p>}
-            <p>Summary: {description}</p>
+            <p>{description}</p>
         </>
-    )
-    
+    ) 
 };
 
 Article.propTypes = {
     url: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string,
-    description: PropTypes.string.isRequired,
+    description: PropTypes.string,
   };
   export default Article;
 

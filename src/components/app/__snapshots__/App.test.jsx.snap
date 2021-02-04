@@ -1,10 +1,28 @@
+
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article component renders Article 1`] = `
+exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <a
-    style="font-size: 8.5rem;"
-  />
-  <p />
+  <div
+    class="main"
+  >
+    <header
+      style="height: 120px; border: 3px solid black;"
+    >
+      <h1
+        style="text-align: center;"
+      >
+        News Search
+      </h1>
+      <div
+        style="text-align: center;"
+      >
+        <input />
+      </div>
+    </header>
+    Loading...
+  </div>
 </DocumentFragment>
 `;
+
+

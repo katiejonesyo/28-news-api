@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Article from '../article/Article';
 
-const ArticlesList = ({ articles }) => {
+const ArticlesList = ({ articles, search }) => {
     const articlesList = articles.map((article, index) => {
         return(
             <li key={index}>
@@ -12,11 +12,21 @@ const ArticlesList = ({ articles }) => {
         )
     });
 
-    return <ul style={{ listStyle: 'none' }}>{articlesList}</ul>;
+return (
+        <>
+          {search && (
+            <div style={{ textAlign: "center" }}>
+              Fetching results for "{search}"...
+            </div>
+          )}
+          <ul style={{ listStyle: "none" }}>{articlesList}</ul>
+        </>
+    );
 };
 
 
 ArticlesList.propTypes = {
+    search: PropTypes.string,
     articles: PropTypes.arrayOf(
         PropTypes.shape({
             title: PropTypes.string.isRequired,
