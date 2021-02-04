@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article component renders Article 1`] = `
+<DocumentFragment>
+  <a
+    style="color: white; background: black; text-align: center; font-family: fantasy; padding-left: 30px; padding-right: 30px;"
+  />
+  <p>
+    Description: 
+  </p>
+</DocumentFragment>
+`;
