@@ -4,11 +4,15 @@ import PropTypes from 'prop-types';
 const Article = ({ url, title, author, description })  => {
     return (
         <>
-            <a href={url} style={{ frontSize:"8.5rem"}}>
+            <a href={url} style={{ 
+            frontSize:'8.5rem', 
+            color: 'white',
+            background: 'black',
+            }}>
             {title}
             </a>
-            {author && <p> Written By: {author} </p>}
-            <p>{description}</p>
+            {author && <p> Author: {author} </p>}
+            <p>Description: {description}</p>
         </>
     ) 
 };

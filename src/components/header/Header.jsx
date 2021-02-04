@@ -8,11 +8,14 @@ const Header = ({ handleSearch }) => {
       style={{
         height: '120px',
         border: '3px solid black',
+        color: 'white',
+        background: 'black',
       }}
     >
-      <h1 style={{ textAlign: 'center' }}>News Search</h1>
+      <h1 style={{ textAlign: 'center' }}>Search</h1>
       <Search handleSearch={handleSearch} />
     </header>
+
   );
 };
 

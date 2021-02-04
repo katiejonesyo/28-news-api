@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 
 export default class Search extends Component {
   render() {
+    const { handleSearch } = this.props;
     return (
-      <form style={{ textAlign: 'center' }}>
-        <input
-          onChange={this.props.handleSearch}
-          placeholder="Search all articles"
-        />
+      <form style={{ 
+        textAlign: 'center',
+        fontFamily: 'fantasy'
+        }}>
+        <input onChange={handleSearch} placeholder='Search..'/>
       </form>
     );
   }
@@ -17,5 +18,6 @@ export default class Search extends Component {
 Search.propTypes = {
   handleSearch: PropTypes.func.isRequired,
 };
+
 
 
