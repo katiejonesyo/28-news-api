@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ArticlesList from '../components/articles/ArticlesList';
 import getArticles from '../services/getArticles';
 import Header from '../components/header/Header';
-import Search from '../components/search/Search';
+import searchArticles from '../services/searchArticles';
 
 export default class NewsSearch extends Component {
   state = {
